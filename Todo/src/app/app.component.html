@@ -1,0 +1,8 @@
+<div id="myDIV" class="header">
+  <h2>My To Do List</h2>
+    <input type="text" id="myInput" [formControl] = "name" placeholder="Title...">
+    <span (click) = "addTodoFunc()" class="addBtn">Add</span>
+</div>
+<ul id="myUL">
+  <app-todo-element *ngFor="let todo of todoItems" [todoItem]="todo" (deleteTodo)="deleteTodo($event)"></app-todo-element>
+</ul>

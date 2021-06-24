@@ -1,0 +1,29 @@
+GET http://localhost/api/DatabaseToJson.php?AUTH=VocastStudio&ID=2
+
+###
+
+GET http://localhost:3000/subscribers/60950698f495dc34acaa4182
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+    "name": "John",
+    "subscribedToChannel": "Vocast Studio",
+    "status": true
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/6095815ff3f5f64abc61400f
+
+###
+
+PATCH http://localhost:3000/subscribers/609663286800e42b488074bb
+Content-Type: application/json
+
+{
+    "status": false
+}
